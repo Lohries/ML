@@ -20,7 +20,7 @@ test = pd.concat([test, sex_encoder_df_test], axis=1)
 
 print(train.head())
 
-features = ["PassengerId", "Pclass", "SibSp", "Sex_male"]
+features = ["Pclass", "SibSp", "Sex_male"]
 
 
 X_train = train[features]
@@ -36,7 +36,7 @@ forest.fit(X_train, y_train)
 predictions = forest.predict(X_test)
 accuracy = accuracy_score(gender_submission["Survived"], predictions)
 conf_matrix = confusion_matrix(gender_submission["Survived"], predictions)
-print(accuracy_score)
+print(accuracy)
 print(conf_matrix)
 
 
