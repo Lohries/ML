@@ -3,6 +3,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.preprocessing import OneHotEncoder
 from sklearn import tree
+import pickle as pk
 
 
 train = pd.read_csv("Csv/Titanic/train.csv")
@@ -39,6 +40,9 @@ accuracy = accuracy_score(gender_submission["Survived"], predictions)
 conf_matrix = confusion_matrix(gender_submission["Survived"], predictions)
 print(accuracy)
 print(conf_matrix)
+
+with open("titanic_RFC.pkl", "wb") as file:
+    pk.dump(forest, file)
 
 
 
