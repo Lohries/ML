@@ -8,6 +8,8 @@ st.text("Selecione os parâmetros e descubra quem sobreviveu ??????")
 st.image('chopper.jpeg')
 
 
+
+
 with st.sidebar:
     st.header("Sexo")
     sex = st.radio("Marque o sexo", ["Masculino", "Feminino"])
@@ -28,7 +30,7 @@ with st.sidebar:
         st.write("Nada foi selecionado")
 
     
-    st.button("Submit")
+    st.button("Submit 💀")
 
 st.header("Redes sociais")
 st.write("[Linkedin]()")
