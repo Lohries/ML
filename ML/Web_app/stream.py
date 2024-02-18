@@ -6,7 +6,7 @@ import pickle as pk
 
 st.title("Modelo do Titanic")
 st.text("Selecione os parâmetros e descubra quem sobreviveu ??????")
-st.image('chopper.jpeg')
+
 
 
 
