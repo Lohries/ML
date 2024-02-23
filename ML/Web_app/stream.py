@@ -31,19 +31,21 @@ def main():
         st.write("O valor da passagem ", slider, "$")
 
         if st.button("Submit 💀"):
-            # Carregar o modelo
+          
             with open("ML/Web_app/titanic_RFC.pkl", "rb") as file:
                 model = pk.load(file)
 
-            # Preparar os dados para a previsão
+          
             features = [[sex_model, class_model, slider]]
-            # Fazer a previsão
+          
             prediction = model.predict(features)
 
-            # Exibir o resultado
+            
             if prediction[0] == 1:
                 st.write("Este passageiro teria sobrevivido.")
+                st.image()
             else:
+
                 st.write("Este passageiro teria morrido.")
 
     st.header("Redes sociais")
