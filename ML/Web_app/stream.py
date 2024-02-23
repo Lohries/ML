@@ -51,7 +51,7 @@ def main():
     st.header("Redes sociais")
     st.write("[Linkedin](www.linkedin.com/in/luis-henrique-telo-ladeira-mota-6a848124a)")
     st.write("[Instagram]()")
-    st.write("[GitHub]()")
+    st.write("[GitHub](https://github.com/Lohries)")
 
 if __name__ == "__main__":
     main()
