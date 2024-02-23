@@ -49,7 +49,7 @@ def main():
                 st.write("Este passageiro teria morrido.")
 
     st.header("Redes sociais")
-    st.write("[Linkedin]()")
+    st.write("[Linkedin](www.linkedin.com/in/luis-henrique-telo-ladeira-mota-6a848124a)")
     st.write("[Instagram]()")
     st.write("[GitHub]()")
 
