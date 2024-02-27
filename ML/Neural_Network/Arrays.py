@@ -14,3 +14,9 @@ filter[0, :, :] = [[1, 1, 1],
 filter[1, :, :] = [[1, 0, -1],
                    [1, 0, -1], 
                    [1, 0, -1]]
+
+
+
+def convolution(img, filter):
+    if len(img.shape) > 2 or len(filter.shape) > 3:
+        if filter.shape[1] != filter.shape[2]:
