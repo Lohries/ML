@@ -20,11 +20,12 @@ filter[1, :, :] = [[1, 0, -1],
 
 def convolution(img, filter):
     if len(img.shape) > 2 or len(filter.shape) > 3:
-        print("Erro")
+        print("Erro, filtros incompativeis com shape da imagem")
         sys.exit()
     if filter.shape[1] != filter.shape[2]:
-        print("Erro")
+        print("Erro, filtro com dimensoes incompativeis")
         sys.exit()
     if filter.shape[1]%2 == 0:
-        print("Erro")
+        print("Erro, shape de filtro precisa ser impar")
         sys.exit()
+        
